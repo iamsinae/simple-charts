@@ -1,0 +1,52 @@
+iso3.code,year,label,area,source,Q1,Q5,disp,resid,wb.income.2017,gni,urban.prop,region,iso.resid
+AFG,2015,Infant and under-5 mortality rates,Afghanistan,DHS,46.49776779,33.43382159,13,urban,Low income,590,0.26703,Asia,urban AFG
+AGO,2015,Infant and under-5 mortality rates,Angola,DHS,105.3152807,40.2264929,65,urban,Lower middle income,4070,0.4405,Africa,urban AGO
+BEN,2014,Infant and under-5 mortality rates 10 YEARS,Benin,MICS,112.9521325,46.68309319,66,urban,Low income,930,0.43514,Africa,urban BEN
+BGD,2014,Infant and under-5 mortality rates,Bangladesh,DHS,53.90109838,18.51937542,35,urban,Lower middle income,1070,0.33516,Asia,urban BGD
+CIV,2011,Infant and under-5 mortality rates,Cote d'Ivoire,DHS,126.1095187,66.12860305,60,urban,Lower middle income,1130,0.51305,Africa,urban CIV
+CMR,2014,Infant and under-5 mortality rates 10 YEARS,Cameroon,MICS,108.8521544,44.44871315,64,urban,Lower middle income,1380,0.53819,Africa,urban CMR
+COD,2013,Infant and under-5 mortality rates,Democratic Republic of Congo,DHS,116.5938398,63.7466899,53,urban,Low income,370,0.41461,Africa,urban COD
+COG,2011,Infant and under-5 mortality rates,Congo,DHS,111.9208111,51.2832662,61,urban,Lower middle income,2060,0.63666,Africa,urban COG
+COL,2015,Infant and under-5 mortality rates,Colombia,DHS,24.85589136,7.089199608,18,urban,Upper middle income,7140,0.76436,Latin America and the Caribbean,urban COL
+DOM,2014,Infant and under-5 mortality rates 10 YEARS,Dominican Republic,MICS,38.33503458,29.11348342,9,urban,Upper middle income,6110,0.78061,Latin America and the Caribbean,urban DOM
+EGY,2014,Infant and under-5 mortality rates,Egypt,DHS,28.49605188,21.41404422,7,urban,Lower middle income,3250,0.43069,Africa,urban EGY
+ETH,2016,Infant and under-5 mortality rates,Ethiopia,DHS,71.34502682,26.45473413,45,urban,Low income,660,0.19922,Africa,urban ETH
+GAB,2012,Infant and under-5 mortality rates,Gabon,DHS,70.28692068,51.38349442,19,urban,Upper middle income,9040,0.86367,Africa,urban GAB
+GHA,2014,Infant and under-5 mortality rates,Ghana,DHS,71.02285166,52.34578041,19,urban,Lower middle income,1580,0.53392,Africa,urban GHA
+GIN,2012,Infant and under-5 mortality rates,Guinea,DHS,126.4136079,58.87921999,68,urban,Low income,440,0.35748,Africa,urban GIN
+GNB,2014,Infant and under-5 mortality rates 10 YEARS,Guinea-Bissau,MICS,99.20057112,72.6445282,27,urban,Low income,620,0.4855,Africa,urban GNB
+GTM,2014,Infant and under-5 mortality rates,Guatemala,DHS,47.25928982,15.65151308,32,urban,Lower middle income,3450,0.51115,Latin America and the Caribbean,urban GTM
+HND,2011,Infant and under-5 mortality rates,Honduras,DHS,41.10058478,19.84443722,21,urban,Lower middle income,1910,0.52316,Latin America and the Caribbean,urban HND
+HTI,2012,Infant and under-5 mortality rates,Haiti,DHS,128.4248818,64.72225708,64,urban,Low income,750,0.54841,Latin America and the Caribbean,urban HTI
+IDN,2012,Infant and under-5 mortality rates,Indonesia,DHS,43.44839088,22.65086377,21,urban,Lower middle income,3570,0.51488,Asia,urban IDN
+JOR,2012,Infant and under-5 mortality rates,Jordan,DHS,29.26377467,11.92126598,17,urban,Lower middle income,3680,0.8297,Asia,urban JOR
+KEN,2014,Infant and under-5 mortality rates,Kenya,DHS,62.17228556,48.32039801,14,urban,Lower middle income,1260,0.25197,Africa,urban KEN
+KHM,2014,Infant and under-5 mortality rates,Cambodia,DHS,30.24882225,9.034473333,21,urban,Lower middle income,1020,0.20514,Asia,urban KHM
+LAO,2011,Infant and under-5 mortality rates 10 YEARS,Lao PDR,MICS,103.61567,28.40170651,75,urban,Lower middle income,1120,0.34252,Asia,urban LAO
+LBR,2013,Infant and under-5 mortality rates,Liberia,DHS,105.2746682,96.84429414,8,urban,Low income,370,0.48921,Africa,urban LBR
+MLI,2012,Infant and under-5 mortality rates,Mali,DHS,78.69408025,50.205866,28,urban,Low income,730,0.37579,Africa,urban MLI
+MNG,2013,Infant and under-5 mortality rates 10 YEARS,Mongolia,MICS,25.33742829,10.59852588,15,urban,Lower middle income,4350,0.70366,Asia,urban MNG
+MWI,2015,Infant and under-5 mortality rates,Malawi,DHS,46.63967801,65.16860887,-19,urban,Low income,340,0.16272,Africa,urban MWI
+NAM,2013,Infant and under-5 mortality rates,Namibia,DHS,71.1590253,25.3249901,46,urban,Upper middle income,5800,0.44679,Africa,urban NAM
+NER,2012,Infant and under-5 mortality rates,Niger,DHS,101.8261552,59.17355801,43,urban,Low income,390,0.17986,Africa,urban NER
+NGA,2013,Infant and under-5 mortality rates,Nigeria,DHS,147.0285435,63.4768112,84,urban,Lower middle income,2700,0.46094,Africa,urban NGA
+NPL,2016,Infant and under-5 mortality rates,Nepal,DHS,55.10089726,17.17204082,38,urban,Low income,730,0.18995,Asia,urban NPL
+PAK,2012,Infant and under-5 mortality rates,Pakistan,DHS,102.2755201,33.95325376,68,urban,Lower middle income,1260,0.37428,Asia,urban PAK
+PER,2012,Infant and under-5 mortality rates,Peru,DHS,34.16690765,13.72687877,20,urban,Upper middle income,5660,0.77616,Latin America and the Caribbean,urban PER
+PHL,2013,Infant and under-5 mortality rates,Philippines,DHS,41.30436443,5.100552103,36,urban,Lower middle income,3300,0.44633,Asia,urban PHL
+PRY,2016,Infant and under-5 mortality rates 10 YEARS,Paraguay,MICS,40.49772253,0,40,urban,Upper middle income,4070,0.59924,Latin America and the Caribbean,urban PRY
+RWA,2014,Infant and under-5 mortality rates,Rwanda,DHS,59.53041333,32.74218967,27,urban,Low income,700,0.27841,Africa,urban RWA
+SDN,2014,Infant and under-5 mortality rates 10 YEARS,Sudan,MICS,88.01898829,35.75616732,52,urban,Lower middle income,1830,0.33623,Africa,urban SDN
+SEN,2016,Infant and under-5 mortality rates,Senegal,DHS,67.49561629,18.12734856,49,urban,Low income,950,0.44065,Africa,urban SEN
+SLE,2013,Infant and under-5 mortality rates,Sierra Leone,DHS,172.2803622,148.0644032,24,urban,Low income,650,0.39226,Africa,urban SLE
+SLV,2014,Infant and under-5 mortality rates 10 YEARS,El Salvador,MICS,16.44102378,8.729609287,8,urban,Lower middle income,3790,0.66255,Latin America and the Caribbean,urban SLV
+STP,2014,Infant and under-5 mortality rates 10 YEARS,Sao Tome and Principe,MICS,55.63244836,19.75164288,36,urban,Lower middle income,1680,0.64511,Africa,urban STP
+TCD,2014,Infant and under-5 mortality rates,Chad,DHS,134.4812696,103.6784807,31,urban,Low income,980,0.22341,Africa,urban TCD
+TGO,2013,Infant and under-5 mortality rates,Togo,DHS,117.811458,36.81842255,81,urban,Low income,490,0.38979,Africa,urban TGO
+TJK,2012,Infant and under-5 mortality rates,Tajikistan,DHS,46.54012278,21.99906418,25,urban,Lower middle income,1140,0.26568,Asia,urban TJK
+TUR,2013,Infant and under-5 mortality rates,Turkey,DHS,26.70819119,6.590124891,20,urban,Upper middle income,12530,0.7237,Asia,urban TUR
+TZA,2015,Infant and under-5 mortality rates,Tanzania,DHS,99.70151749,68.72901175,31,urban,Low income,910,0.31608,Africa,urban TZA
+VNM,2014,Infant and under-5 mortality rates 10 YEARS,Viet Nam,MICS,16.78747257,11.70480117,5,urban,Lower middle income,1900,0.32951,Asia,urban VNM
+YEM,2013,Infant and under-5 mortality rates,Yemen,DHS,59.21087577,35.61815552,24,urban,Lower middle income,1410,0.3345,Asia,urban YEM
+ZMB,2013,Infant and under-5 mortality rates,Zambia,DHS,93.34921639,61.99917861,31,urban,Lower middle income,1730,0.40027,Africa,urban ZMB
+ZWE,2015,Infant and under-5 mortality rates,Zimbabwe,DHS,70.21224742,44.40223924,26,urban,Low income,960,0.32376,Africa,urban ZWE

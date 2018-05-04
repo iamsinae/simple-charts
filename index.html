@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+body {
+  font-family:'Roboto';
+  font-size: 11px;
+  color: #6d6e70;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #939597;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 10px;
+  fill: #6d6e70;
+}
+
+.dot {
+  stroke: none;
+}
+
+.tooltip {
+    background: white;
+    border-radius: 4px;
+    width: auto;   
+    box-shadow: 0 0 1px #999999;
+    color: #333;
+    font-size: 11px;
+    left: 130px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+    display: block;
+    opacity: 0; 
+}
+
+</style>
+<body>
+<script src="d3/d3.min.js"></script>
+
+<script>
+var w  = 900;
+var h = 500; 
+var padding = 40;
+
+
+// load data
+d3.csv("u5mr_2.csv", function(error, data) {
+    data.forEach(function(d) {
+            d.gni = + d.gni;
+            d.disp = +d.disp;
+//    console.log(d);
+      });
+
+// set up values and scales 
+var xValue = function(d) { return d.gni;},
+    xScale = d3.scaleLinear()
+                .domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1])
+                .range([padding, w - padding * 2]);
+
+var yValue = function(d) {return d.disp;},
+    yScale = d3.scaleLinear()
+        .domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1])
+        .range([h - padding, padding]);
+
+// set up axis
+var xAxis = d3.axisBottom()
+              .scale(xScale); 
+var yAxis = d3.axisLeft()
+              .scale(yScale);
+
+// set up fill color
+var cValue = function(d) { return d.region;},
+    color = d3.scaleOrdinal()
+              .range(["#e98c82","#00b9f1","#ae5799"])
+              .domain(["Africa", "Asia", "Latin America and the Caribbean"]);
+
+// add the graph canvas to the body of the webpage
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+// add the tooltip area to the webpage
+var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+  // x-axis 
+  svg.append("g")
+      .attr("class", "axis")
+      .attr("transform", "translate(0," + (h - padding) + ")")
+      .call(xAxis)
+      .append("text")
+      .attr("class", "label")
+      .attr("x", w - padding * 2)
+      .attr("y", 35)
+      .style("text-anchor", "end")
+      .text("GNI");
+
+  // y-axis
+  svg.append("g")
+      .attr("class", "axis")
+      .attr("transform", "translate(" + padding + ", 0)")
+      .call(yAxis)
+      .append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .attr("dx", "-4em")
+      .attr("y", -35)
+      .attr("dy", ".5em")
+      .style("text-anchor", "end")
+      .text("Disparity");
+
+  // draw circles
+  svg.selectAll("circle")
+      .data(data)
+      .enter()
+      .append("circle")
+      .attr("class", "dot")
+      .attr("r", 4)
+      .attr("cx", function(d) {
+            return xScale(d.gni);
+      })
+      .attr("cy", function(d) {
+            return yScale(d.disp);
+      })
+      .style("fill", function(d) { return color(cValue(d));}) 
+      .style("opacity", "0.5")
+      .on("mouseover", function(d) {
+          tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+          tooltip.html(d["area"] + "<br/> GNI: " + xValue(d) 
+	        + "<br/> Disparity: " + yValue(d))
+               .style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+      })
+      .on("mouseout", function(d) {
+          tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+      });
+
+  // draw legend
+  var legend = svg.selectAll(".legend")
+      .data(color.domain())
+      .enter()
+      .append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  // draw legend colored rectangles
+  legend.append("rect")
+      .attr("x", w - padding*2)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  // draw legend text
+  legend.append("text")
+      .attr("x", w - padding * 2 - 10)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("fill", "#6d6e70")
+      .style("text-anchor", "end")
+      .text(function(d) { return d;})
+});
+
+</script>
+</body>
+</html>
