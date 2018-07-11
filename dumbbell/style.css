@@ -1,0 +1,93 @@
+.option {
+  left: 20px;
+  width:550px;
+  height: 100px;
+  margin-left:23;
+  margin-right:40; 
+}
+
+.dumbbell {
+  font-family: "sans-serif";
+  font-size: 9px;
+  color: #333;
+}
+
+.tooltip {
+      background: white;
+      border-radius: 3px;
+      width: auto;   
+      box-shadow: 0 0 0.5px #000;
+      color: #000;
+      font: 10px sans-serif;
+      left: 130px;
+      padding: 8px;
+      position: absolute;
+      text-align: center;
+      display: block;
+      opacity: 0; 
+    }
+
+.circle:hover {
+      opacity: 1;
+      stroke:#000;
+      stroke-width: 1.5;
+    }
+
+.upoor {
+  fill: #B1B8CE;
+}
+
+.urich {
+  fill: #273A8D;
+}
+
+.rpoor {
+  fill: white;
+  stroke: #B1B8CE;
+}
+.rrich {
+  fill: white;
+  stroke: #273A8D;
+}
+
+.line.between {
+  stroke: #273A8D;
+  stroke-width: 1;
+  stroke-opacity: 1;
+}
+
+.line.grid {
+  stroke: lightgrey;
+  stroke-width: 0.5;
+  stroke-dasharray: 1;
+}
+
+.y-axis text{
+  font-size: 9px;
+  fill: #333;
+}
+
+.legend {
+font: 9px sans-serif;
+fill: #333;
+ 
+}
+
+.x-axis text{
+  font-size: 8px;
+  fill: #333;
+}
+
+.y-axis path.domain { stroke: none;}
+.yRightAxis path.domain { stroke: none;}
+.y-axis .tick line {
+  stroke : none;
+}
+
+.yRightAxis .tick line {
+  stroke : none;
+}
+.yRightAxis text {
+  display:none;
+}
+
