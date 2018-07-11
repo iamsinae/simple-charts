@@ -41,7 +41,7 @@ d3.csv("dumbell.water.csv", function(d) {
   chart.append("g")
       .attr("class", "x-axis")
       .attr("transform", "translate(0, "+h+")")
-      .call(d3.axisBottom(xLeft).ticks(4).tickSizeOuter(0).tickFormat(d => d + "%"))
+      .call(d3.axisBottom(xLeft).ticks(4).tickSizeOuter(0).tickFormat(function(d){return d + "%"}))
       .append("text")
       .attr("text-anchor", "end");
   
@@ -49,7 +49,7 @@ d3.csv("dumbell.water.csv", function(d) {
    chart.append("g")
       .attr("class", "x-axis")
       .attr("transform", "translate("+pointB+" "+h+")")
-      .call(d3.axisBottom(xRight).ticks(4).tickFormat(d => d + "%").tickSizeOuter(0))
+      .call(d3.axisBottom(xRight).ticks(4).tickFormat(function(d){return d + "%"}).tickSizeOuter(0))
       .append("text")
       .attr("text-anchor", "end");
 
